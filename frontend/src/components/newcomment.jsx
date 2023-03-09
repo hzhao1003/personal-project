@@ -9,7 +9,7 @@ function NewComment() {
     const handleSubmit = (e) =>{
         const newComment = {postComment, post} 
         e.preventDefault();
-        fetch('http://127.0.0.1:8000/api/create-comment/',{
+        fetch('http://54.185.207.225/api/create-comment/',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(newComment)

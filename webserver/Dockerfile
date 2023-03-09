@@ -15,7 +15,7 @@ WORKDIR /frontend
 # variable when the image is *built* (not run).  For local
 # development, localhost; for production, your EC2's IP address
 ARG REACT_APP_BASE_URL=localhost
-ENV REACT_APP_BASE_URL=35.85.44.45
+ENV REACT_APP_BASE_URL=$REACT_APP_BASE_URL
 
 COPY ./frontend/package.json .
 RUN npm install

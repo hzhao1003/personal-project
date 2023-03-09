@@ -7,7 +7,7 @@ function Posts() {
     // console.log(postID)
     const [posts, setPosts] = useState()
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/view-posts/')
+    fetch('http://54.185.207.225/api/view-posts/')
       .then(res => {return res.json()}) 
       .then(data => {setPosts(data)})
       .catch((err)=>{console.log(err.message)})

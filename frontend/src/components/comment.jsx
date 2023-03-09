@@ -7,7 +7,7 @@ function Comment() {
   const {postID} = useParams()
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/view-comments/')
+    fetch('http://54.185.207.225/api/view-comments/')
       .then(res => {return res.json()}) 
       .then(data => {setComments(data)})
       .catch((err)=>{console.log(err.message)})
